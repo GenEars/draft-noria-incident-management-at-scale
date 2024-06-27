@@ -9,8 +9,8 @@ number:
 date:
 consensus: true
 v: 3
-area: "Internet"
-workgroup: "NMOP"
+area: "Operations and Management"
+workgroup: "Network Management Operations"
 keyword:
  - knowledge graphs
  - incident management
