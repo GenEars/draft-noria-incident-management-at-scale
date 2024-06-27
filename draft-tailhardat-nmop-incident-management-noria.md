@@ -9,29 +9,24 @@ number:
 date:
 consensus: true
 v: 3
-area: OPS
-workgroup: Network Management Operations
+area: "Internet"
+workgroup: "NMOP"
 keyword:
  - knowledge graphs
  - incident management
  - anomaly detection
-venue:
-  group: NMOP
-  type: Working Group
-  mail: nmop@ietf.org
-  github: GenEars/draft-noria-incident-management-at-scale
 
 author:
  -
-    fullname: Lionel TAILHARDAT
+    fullname: Lionel Tailhardat
     organization: Orange
-    email: lionel.tailhardat@orange.com
--
-    fullname: Raphaël TRONCY
+    email: "lionel.tailhardat@orange.com"
+ -
+    fullname: Raphaël Troncy
     organization: EURECOM
     email: raphael.troncy@eurecom.fr
--
-    fullname: Yoan CHABOT
+ -
+    fullname: Yoan Chabot
     organization: Orange
     email: yoan.chabot@orange.com
 
@@ -39,11 +34,9 @@ normative:
 
 informative:
 
-
 --- abstract
 
-TODO Abstract
-
+TBC
 
 --- middle
 
@@ -66,10 +59,9 @@ TODO Security
 
 This document has no IANA actions.
 
-
 --- back
 
 # Acknowledgments
 {:numbered="false"}
 
-TODO acknowledge.
+TBC
