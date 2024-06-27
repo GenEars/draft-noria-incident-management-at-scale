@@ -1,6 +1,6 @@
-# I-D draft-noria-incident_management_at_scale
+# I-D draft-noria-incident-management-at-scale
 
-Internet-Draft (I-D) for knowledge graphs as a mean towards enhanced cross operators incident management and network design.
+Internet-Draft (I-D) on Knowledge Graphs for Enhanced Cross-Operator Incident Management and Network Design.
 
 ## Usage
 
