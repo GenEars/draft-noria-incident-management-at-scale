@@ -1,6 +1,6 @@
 ---
 title: "Knowledge Graphs for Enhanced Cross-Operator Incident Management and Network Design"
-abbrev: "KG-IM-ND"
+abbrev: "Knowledge Graphs & Incident Management"
 category: info
 
 docname: draft-tailhardat-nmop-incident-management-noria-latest
