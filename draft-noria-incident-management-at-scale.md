@@ -19,35 +19,43 @@
 # Change the file extension to match the format (.xml for XML, etc...)
 #
 ###
-title: "TODO - Your title"
-abbrev: "TODO - Abbreviation"
+title: "Knowledge Graphs for Enhanced Cross-Operator Incident Management and Network Design"
+abbrev: "KG-IM-ND"
 category: info
 
-docname: draft-todo-yourname-protocol-latest
+docname: draft-noria-incident-management-at-scale
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
 consensus: true
 v: 3
 area: AREA
-workgroup: WG Working Group
+workgroup: Network Management Operations
 keyword:
- - next generation
- - unicorn
- - sparkling distributed ledger
+ - knowledge graphs
+ - incident management
+ - anomaly detection
 venue:
   group: WG
   type: Working Group
   mail: WG@example.com
   arch: https://example.com/WG
-  github: USER/REPO
+  github: GenEars/draft-todo-noria-incident_management_at_scale
   latest: https://example.com/LATEST
 
 author:
  -
-    fullname: Your Name Here
-    organization: Your Organization Here
-    email: your.email@example.com
+    fullname: Lionel TAILHARDAT
+    organization: Orange
+    email: lionel.tailhardat@orange.com
+-
+    fullname: Raphaël TRONCY
+    organization: EURECOM
+    email: raphael.troncy@eurecom.fr
+-
+    fullname: Yoan CHABOT
+    organization: ORANGE
+    email: yoan.chabot@orange.com
 
 normative:
 

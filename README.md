@@ -1,18 +1,19 @@
-# Internet-Draft Template Repository
+# I-D draft-noria-incident_management_at_scale
 
-Use this repository as a template if you want to start working on
-[IETF](https://www.ietf.org/) documents. [Click here to create a new repository using the
-template](https://github.com/martinthomson/internet-draft-template/generate).
-Make sure to check "Include all branches", or you will need to enable GitHub Pages manually.
+Internet-Draft (I-D) for knowledge graphs as a mean towards enhanced cross operators incident management and network design.
 
-[Read the
-instructions](https://github.com/martinthomson/i-d-template/blob/main/doc/TEMPLATE.md)
-for more information.
+## Usage
 
-Once you have created your own repository, start work by:
+See [README_I-D_template.md](README_I-D_template.md), a copy of the [Internet-Draft Template Repository](https://github.com/martinthomson/internet-draft-template) instructions.
 
-1. Set "Workflow permissions" to "Read and write permissions"
-   [in the repository settings](../../settings/actions#actions_default_workflow_permissions_write).
+## Useful links
 
-2. Rename the `draft-todo-yourname-protocol.md` file
-   [here](../../edit/main/draft-todo-yourname-protocol.md).
+* [IETF-Meetings/120 /Requested-Slots](https://github.com/ietf-wg-nmop/IETF-Meetings/blob/main/120/Requested-Slots.md)
+* [M. Boucadair GitHub](https://github.com/boucadair)
+* [draft-marcas-nmop-knowledge-graph-yang-latest](https://idomingu.github.io/knowledge-graph-yang/draft-marcas-nmop-knowledge-graph-yang.html)
+
+## Maintainer
+
+* [Lionel TAILHARDAT](mailto:lionel.tailhardat@orange.com)
+* [Raphaël TRONCY](mailto:raphael.troncy@eurecom.fr)
+* [Yoan CHABOT](mailto:yoan.chabot@orange.com)
