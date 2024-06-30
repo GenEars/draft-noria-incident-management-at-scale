@@ -1,0 +1,83 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2024-06-30T01:25:53.103630+00:00",
+  "repo": "GenEars/draft-noria-incident-management-at-scale",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOMOylu85zwDL0",
+      "title": "Minor fixes",
+      "url": "https://github.com/GenEars/draft-noria-incident-management-at-scale/pull/1",
+      "state": "MERGED",
+      "author": "boucadair",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-06-27T10:11:05Z",
+      "updatedAt": "2024-06-27T11:33:25Z",
+      "baseRepository": "GenEars/draft-noria-incident-management-at-scale",
+      "baseRefName": "main",
+      "baseRefOid": "9624585fb8c33e9dce91c9312342834e4eaf0d61",
+      "headRepository": "GenEars/draft-noria-incident-management-at-scale",
+      "headRefName": "boucadair-patch-1",
+      "headRefOid": "dc35c24697a1138259ca2a1f1e563419a7620848",
+      "closedAt": "2024-06-27T11:33:25Z",
+      "mergedAt": "2024-06-27T11:33:25Z",
+      "mergedBy": "GenEars",
+      "mergeCommit": {
+        "oid": "23db16109f677c8f78ffeda7c31a53ee097fbce3"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
+}
