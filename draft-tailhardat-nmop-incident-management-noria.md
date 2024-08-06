@@ -75,9 +75,14 @@ Since ..., this document defines ...
 
 ## NORIA-O / YANG KG mapping
 
+## Stream vs KG
+
+
 # Security Considerations
 
 TODO Security
+
+Multi hosting
 
 
 # IANA Considerations
@@ -97,7 +102,32 @@ TBC
 
 ## Informative references
 
-[I.D.draft-marcas-nmop-knowledge-graph-yang] IMartinez-Casanueva, and L. Cabanillas, "Knowledge Graphs for YANG-based Network Management", Work in Progress, Internet-Draft, draft-marcas-nmop-knowledge-graph-yang-03, 5 July 2024, <https://datatracker.ietf.org/doc/draft-marcas-nmop-knowledge-graph-yang/>.
+[I.D.draft-marcas-nmop-knowledge-graph-yang]
+  I.D. Martinez-Casanueva, and L. Cabanillas,
+  "Knowledge Graphs for YANG-based Network Management",
+  Work in Progress,
+  Internet-Draft,
+  draft-marcas-nmop-knowledge-graph-yang-03,
+  5 July 2024,
+  <https://datatracker.ietf.org/doc/draft-marcas-nmop-knowledge-graph-yang/>.
+
+[I.D.draft-netana-nmop-network-anomaly-lifecycle]
+  A. Roberto, T. Graf, W. Du, and A. Huang Feng,
+  "Experiment: Network Anomaly Lifecycle",
+  Work in Progress,
+  Internet-Draft,
+  draft-netana-nmop-network-anomaly-lifecycle-03,
+  8 July 2024,
+  <https://datatracker.ietf.org/doc/draft-netana-nmop-network-anomaly-lifecycle/>.
+
+[I.D.draft-netana-nmop-network-anomaly-semantics]
+  T. Graf, W. Du, A. Huang Feng, V. Riccobene, and A. Roberto,
+  "Semantic Metadata Annotation for Network Anomaly Detection",
+  Work in Progress,
+  Internet-Draft,
+  draft-netana-nmop-network-anomaly-semantics-02,
+  7 July 2024,
+  <https://datatracker.ietf.org/doc/draft-netana-nmop-network-anomaly-semantics/>.
 
 --- back
 
