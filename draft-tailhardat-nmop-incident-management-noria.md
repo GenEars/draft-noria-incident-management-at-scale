@@ -96,10 +96,11 @@ This document makes use of the terms defined in
 
 # Proposal
 
-Include TT descriptors
-Track and tag the remediation actions through KG
-Capture the incident context (SL, model-based)
-Share the incident context, including the lifecycle.
+- Include TT descriptors
+- Iteratively
+  - Capture the incident context (SL, model-based)
+  - Track and tag the remediation actions through KG, bringing pre/post conditions and remediation procedural model
+- Share the incident context, including the lifecycle.
 
 [I.D.draft-netana-nmop-network-anomaly-lifecycle]
 Network Anomaly Detection
@@ -291,6 +292,9 @@ This document has no IANA actions.
 
 TBC ...
 
+* Data structure in [I.D.draft-netana-nmop-network-anomaly-lifecycle] overlaps some definitions from the TM-Forum
+* Semantics of [I.D.draft-netana-nmop-network-anomaly-lifecycle] is not matched with the SecOps perspective
+* Yang models overlap
 
 # References
 
