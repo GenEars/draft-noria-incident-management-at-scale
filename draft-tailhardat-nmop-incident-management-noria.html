@@ -1141,6 +1141,14 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.4">
                 <p id="section-toc.1-1.2.2.4.1"><a href="#section-2.4" class="auto internal xref">2.4</a>.  <a href="#name-stream-vs-kg" class="internal xref">Stream vs KG</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.4.2.1">
+                    <p id="section-toc.1-1.2.2.4.2.1.1"><a href="#section-2.4.1" class="auto internal xref">2.4.1</a>.  <a href="#name-the-multi" class="internal xref">The multi</a></p>
+</li>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.4.2.2">
+                    <p id="section-toc.1-1.2.2.4.2.2.1"><a href="#section-2.4.2" class="auto internal xref">2.4.2</a>.  <a href="#name-hybrid-kg-tsdb" class="internal xref">Hybrid KG/TSDB</a></p>
+</li>
+                </ul>
 </li>
             </ul>
 </li>
@@ -1248,7 +1256,58 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
 <section id="section-2.4">
         <h3 id="name-stream-vs-kg">
 <a href="#section-2.4" class="section-number selfRef">2.4. </a><a href="#name-stream-vs-kg" class="section-name selfRef">Stream vs KG</a>
-      </h3>
+        </h3>
+<div id="the-multi">
+<section id="section-2.4.1">
+          <h4 id="name-the-multi">
+<a href="#section-2.4.1" class="section-number selfRef">2.4.1. </a><a href="#name-the-multi" class="section-name selfRef">The multi</a>
+        </h4>
+</section>
+</div>
+<div id="hybrid-kgtsdb">
+<section id="section-2.4.2">
+          <h4 id="name-hybrid-kg-tsdb">
+<a href="#section-2.4.2" class="section-number selfRef">2.4.2. </a><a href="#name-hybrid-kg-tsdb" class="section-name selfRef">Hybrid KG/TSDB</a>
+          </h4>
+<p id="section-2.4.2-1"><code>
+               ┌──────────┐   ┌────────────────┐   ┌──────────┐   ┌───────────────┐   ┌────────┐
+┌──────────┐   │          │   │                │   │          │   │               │   │┌──────┐│
+│  Events  │──►│  E.S.B.  ├──►│ Stream mapping ├──►│  S.S.B.  ├──►│ Stream loader ├──►││ K.G. ││
+└──────────┘   │          │   │                │   │          │   │               │   │└──────┘│
+               └──────────┘   └────────────────┘   └────┬─────┘   └───────────────┘   └────────┘
+                                                        │
+                                    ┌───────────────────┴──────────────────────┐
+                                    │(event/LOG_login_03)=&gt;(object/RES/router1)│
+                                    └─┌──────────────────────────────────────────┐
+                                      │(event/LOG_login_03)=&gt;(object/RES/router1)│
+                                      └─┌──────────────────────────────────────────┐
+                                        │(event/LOG_login_03)=&gt;(object/RES/router1)│
+                                        └──────────────────────────────────────────┘
+</code><a href="#section-2.4.2-1" class="pilcrow">¶</a></p>
+<p id="section-2.4.2-2"><code>
+                              ┌────────────────┐
+                              │    Complex     │
+                              │     Event      │
+                              │   Processing   │
+                              └───────┬┬───────┘
+               ┌──────────┐   ┌───────┴┴───────┐   ┌──────────┐   ┌───────────────┐   ┌────────┐
+┌──────────┐   │          │   │                │   │          │   │               │   │┌──────┐│
+│  Events  │──►│  E.S.B.  ├──►│ Stream mapping ├──►│  S.S.B.  ├──►│ Stream loader ├──►││ K.G. ││
+└──────────┘   │          │   │                │   │          │   │               │   │└──────┘│
+               └────────┬─┘   └────────────────┘   └────┬─────┘   └───────────────┘   └────────┘
+                        │                               │
+                        │           ┌───────────────────┴──────────────────────┐
+                        │           │(event/AIS_login_01)=&gt;(object/RES/router1)│
+                        │           └──────────────────────────────────────────┘
+                        │
+                        │                                         ┌───────────────┐   ┌────────┐
+                        │                                         │               │   │┌──────┐│
+                        └────────────────────────────────────────►│ Stream loader ├──►││ TSDB ││
+                                                                  │               │   │└──────┘│
+                                                                  └───────────────┘   └────────┘
+</code><a href="#section-2.4.2-2" class="pilcrow">¶</a></p>
+</section>
+</div>
 </section>
 </div>
 </section>
