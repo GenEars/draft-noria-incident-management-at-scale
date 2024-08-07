@@ -101,6 +101,19 @@ Since ..., this document defines ...
                                         └──────────────────────────────────────────┘
 ```
 
+```
+                         <object/RES_router3>
+<object/RES_router2>          │
+               │              │            ┌────────┐
+             <object/RES_router1>─rdf:type─┤Resource│
+                       │                   └────────┘
+                       │
+          logOriginatingManagedObject
+                       │
+             <event/LOG_login_01>             ┌───────────┐
+               <event/LOG_login_02>──rdf:type─┤EventRecord│
+                 <event/LOG_login_03>         └───────────┘
+```
 
 ```
                               ┌────────────────┐
@@ -125,6 +138,58 @@ Since ..., this document defines ...
                                                                   └───────────────┘   └────────┘
 ```
 
+```
+                             <object/RES_router3>
+    <object/RES_router2>          │
+                   │              │            ┌────────┐
+                 <object/RES_router1>─rdf:type─┤Resource│
+                           │                   └────────┘
+                           │
+              logOriginatingManagedObject
+                           │                    ┌───────────┐
+                 <event/AIS_login_01>──rdf:type─┤EventRecord│
+                  │              │ │            └───────────┘
+              duration           │ │
+                  │              │ │
+"P0Y0M0DT0H3M30S"^^xsd:duration  │ └─dcterms:type─<Notification/EventType/inferredAlert>
+                                 │                                │
+                            loggingTime                        rdf:type
+                                 │                          ┌─────┴──────┐
+               "2024-02-07T16:22:42Z"^^xsd:dateTime         │skos:Concept│
+                                                            └────────────┘
+```
+
+```
+                                <object/RES_router3>
+       <object/RES_router2>          │
+                      │              │            ┌────────┐
+                    <object/RES_router1>─rdf:type─┤Resource│
+                              │                   └────────┘
+                              │
+                 logOriginatingManagedObject
+                              │                    ┌───────────┐
+┌──────────────────►<event/AIS_login_01>──rdf:type─┤EventRecord│
+│                    │              │ │            └───────────┘
+│                duration           │ │
+│                    │              │ │
+│  "P0Y0M0DT0H3M30S"^^xsd:duration  │ └─dcterms:type─<Notification/EventType/inferredAlert>
+│                                   │                                │
+│                              loggingTime                        rdf:type
+│                                   │                          ┌─────┴──────┐
+│                 "2024-02-07T16:22:42Z"^^xsd:dateTime         │skos:Concept│
+│                                                              └────────────┘
+│  KG knowledge representation
+│  ========================================================================================
+│  Time series database (TSDB) data representation
+│
+│
+│  Timestamp             Origin                Event
+│  2024-02-07T16:22:42Z  <object/RES_router1>  Login Attempt
+│  2024-02-07T16:23:13Z  <object/RES_router1>  Login Attempt
+│  2024-02-07T16:26:12Z  <object/RES_router1>  Login Attempt
+│                                 ▲
+└──shared─identifier──────────────┘
+```
 
 
 # Security Considerations
