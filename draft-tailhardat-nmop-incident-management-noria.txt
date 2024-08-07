@@ -236,7 +236,14 @@ Table of Contents
 
 6.1.  Normative references
 
-   TBC
+   [SPARQL11-QL] Steve Harris, and Andy Seaborne, "SPARQL 1.1 Query
+   Language", W3C Recommendation, 21 March 2013, https://www.w3.org/TR/
+   sparql11-query/ (https://www.w3.org/TR/sparql11-query/).
+
+   [SPARQL11-FQ] Eric Prud'hommeaux, and Carlos Buil-Aranda, "SPARQL 1.1
+   Federated Query", W3C Recommendation, 21 March 2013,
+   https://www.w3.org/TR/sparql11-federated-query/
+   (https://www.w3.org/TR/sparql11-federated-query/).
 
 6.2.  Informative references
 
@@ -263,6 +270,19 @@ Table of Contents
    July 2024, https://datatracker.ietf.org/doc/draft-netana-nmop-
    network-anomaly-semantics/ (https://datatracker.ietf.org/doc/draft-
    netana-nmop-network-anomaly-semantics/).
+
+   [NORIA-O-2024] Lionel TAILHARDAT, Raphaël TRONCY, and Yoan CHABOT.
+   “NORIA-O: An Ontology for Anomaly Detection and Incident Management
+   in ICT Systems”.  In 21st European Semantic Web Conference (ESWC),
+   Resources track, May 26-30, 2024, Hersonissos, Greece.  2024.
+   https://doi.org/10.1007/978-3-031-60635-9_2
+
+   [StatisticalLearningKG-2023] Lionel TAILHARDAT, Raphaël TRONCY, and
+   Yoan CHABOT.  “Leveraging Knowledge Graphs For Classifying Incident
+   Situations in ICT Systems”.  In The 18th International Conference on
+   Availability, Reliability and Security (ARES 2023), August
+   29-September 1, 2023, Benevento, Italy.  ACM, New York, NY, USA, 9
+   pages.  2023.  https://doi.org/10.1145/3600160.3604991
 
 7.  Normative References
 
