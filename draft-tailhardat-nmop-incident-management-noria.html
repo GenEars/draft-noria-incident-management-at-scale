@@ -1285,6 +1285,19 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
                                         └──────────────────────────────────────────┘
 </code><a href="#section-2.4.2-1" class="pilcrow">¶</a></p>
 <p id="section-2.4.2-2"><code>
+                         &lt;object/RES_router3&gt;
+&lt;object/RES_router2&gt;          │
+               │              │            ┌────────┐
+             &lt;object/RES_router1&gt;─rdf:type─┤Resource│
+                       │                   └────────┘
+                       │
+          logOriginatingManagedObject
+                       │
+             &lt;event/LOG_login_01&gt;             ┌───────────┐
+               &lt;event/LOG_login_02&gt;──rdf:type─┤EventRecord│
+                 &lt;event/LOG_login_03&gt;         └───────────┘
+</code><a href="#section-2.4.2-2" class="pilcrow">¶</a></p>
+<p id="section-2.4.2-3"><code>
                               ┌────────────────┐
                               │    Complex     │
                               │     Event      │
@@ -1305,7 +1318,58 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
                         └────────────────────────────────────────►│ Stream loader ├──►││ TSDB ││
                                                                   │               │   │└──────┘│
                                                                   └───────────────┘   └────────┘
-</code><a href="#section-2.4.2-2" class="pilcrow">¶</a></p>
+</code><a href="#section-2.4.2-3" class="pilcrow">¶</a></p>
+<p id="section-2.4.2-4"><code>
+                             &lt;object/RES_router3&gt;
+    &lt;object/RES_router2&gt;          │
+                   │              │            ┌────────┐
+                 &lt;object/RES_router1&gt;─rdf:type─┤Resource│
+                           │                   └────────┘
+                           │
+              logOriginatingManagedObject
+                           │                    ┌───────────┐
+                 &lt;event/AIS_login_01&gt;──rdf:type─┤EventRecord│
+                  │              │ │            └───────────┘
+              duration           │ │
+                  │              │ │
+"P0Y0M0DT0H3M30S"^^xsd:duration  │ └─dcterms:type─&lt;Notification/EventType/inferredAlert&gt;
+                                 │                                │
+                            loggingTime                        rdf:type
+                                 │                          ┌─────┴──────┐
+               "2024-02-07T16:22:42Z"^^xsd:dateTime         │skos:Concept│
+                                                            └────────────┘
+</code><a href="#section-2.4.2-4" class="pilcrow">¶</a></p>
+<p id="section-2.4.2-5"><code>
+                                &lt;object/RES_router3&gt;
+       &lt;object/RES_router2&gt;          │
+                      │              │            ┌────────┐
+                    &lt;object/RES_router1&gt;─rdf:type─┤Resource│
+                              │                   └────────┘
+                              │
+                 logOriginatingManagedObject
+                              │                    ┌───────────┐
+┌──────────────────►&lt;event/AIS_login_01&gt;──rdf:type─┤EventRecord│
+│                    │              │ │            └───────────┘
+│                duration           │ │
+│                    │              │ │
+│  "P0Y0M0DT0H3M30S"^^xsd:duration  │ └─dcterms:type─&lt;Notification/EventType/inferredAlert&gt;
+│                                   │                                │
+│                              loggingTime                        rdf:type
+│                                   │                          ┌─────┴──────┐
+│                 "2024-02-07T16:22:42Z"^^xsd:dateTime         │skos:Concept│
+│                                                              └────────────┘
+│  KG knowledge representation
+│  ========================================================================================
+│  Time series database (TSDB) data representation
+│
+│
+│  Timestamp             Origin                Event
+│  2024-02-07T16:22:42Z  &lt;object/RES_router1&gt;  Login Attempt
+│  2024-02-07T16:23:13Z  &lt;object/RES_router1&gt;  Login Attempt
+│  2024-02-07T16:26:12Z  &lt;object/RES_router1&gt;  Login Attempt
+│                                 ▲
+└──shared─identifier──────────────┘
+</code><a href="#section-2.4.2-5" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
