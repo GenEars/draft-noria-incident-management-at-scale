@@ -1383,6 +1383,45 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
       </h2>
 <p id="section-3-1">TODO Security<a href="#section-3-1" class="pilcrow">¶</a></p>
 <p id="section-3-2">Multi hosting<a href="#section-3-2" class="pilcrow">¶</a></p>
+<p id="section-3-3"><code>
+Data domain &amp;   ───On-premise────────────────────────────   ┌─┐  Scope-based querying
+access policy   ┌───────┐                                   │ │
+                │┌─────┐│  ┌──────┐           ┌─────────┐   │ │           ┌───────────┐
+  Domain A ────►││ KG  ││◄─┤KGDBMS├───────────┤SPARQL EP├──►│ ├─Network &amp;─┤  NetOps   │
+   -   UG2      │└─────┘│  └──────┘           └─────────┘   │ ├─Usage─────┤Application│
+                └───────┘                                   │ │           └───────────┘
+                ┌───────┐                                   │ │           ┌───────────┐
+                │┌─────┐│  ┌──────┐           ┌─────────┐   │ ├─Network &amp;─┤  SecOps   │
+  Domain B ────►││ KG  ││◄─┤KGDBMS├───────────┤SPARQL EP├──►│ ├─Security──┤Application│
+  UG1   -       │└─────┘│  └──────┘           └─────────┘   │F│           └───────────┘
+                └─────┬─┘                                   │E│
+                      └─────────────────────────────────────│D│─────────────┐
+                ───On-premise / public-cloud─────────────   │E│             │
+                ┌───────┐                                   │R│             ▼  Usage
+                │┌─────┐│  ┌──────┐ ┌───┐     ┌─────────┐   │A│           ┌────scope──┐
+  Domain C ────►││ RDB ││◄─┤RDBMS ├─┤VKG├─────┤SPARQL EP├──►│T│           │*          │
+  UG1 &amp; UG2     │└─────┘│  └──────┘ └───┘     └─────────┘   │E│   Network │   *  *    │
+                └───────┘                                   │D│   scope───│────────┐  │
+                ┌───────┐                                   │ │       │   │ *  *   │  │
+                │┌─────┐│  ┌──────┐ ┌───┐     ┌─────────┐   │Q│       │  *└───────────┘
+  Domain D ────►││NoSQL││◄─┤RDBMS ├─┤VKG├─────┤SPARQL EP├──►│U│       │  ┌───────────┐
+  UG1   -       │└─────┘│  └──────┘ └───┘     └─────────┘   │E│       │* │ *  *    │ │
+                └───────┘                                   │R│       └──│─────────┘ │
+                ┌───────┐                                   │I│        ▲ │     *     │
+                │┌─────┐│  ┌──────┐ ┌───────┐ ┌─────────┐   │E│        │ │ *       * │
+  Domain E ────►││ LPG ││◄─┤GDBMS ├─│QL tlt.├─┤SPARQL EP│──►│S│        │ └──Security─┘
+   -   UG2      │└─────┘│  └──────┘ └───────┘ └─────────┘   │ │        │    scope ▲
+                └───┬───┘                                   │ │        │          │
+                    └───────────────────────────────────────│ │────────┼──────────┘
+                                                            │ │        │
+                ───Public-cloud──────────────────────────   │ │        │
+                ┌───────┐                                   │ │        │
+                │┌─────┐│  ┌──────┐           ┌─────────┐   │ │        │
+  Domain F ────►││ KG  ││◄─┤KGDBMS├───────────┤SPARQL EP├──►│ │        │
+  UG1 &amp; UG2     │└─────┘│  └──────┘           └─────────┘   │ │        │
+                └───┬───┘                                   └─┘        │
+                    └──────────────────────────────────────────────────┘
+</code><a href="#section-3-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="iana-considerations">
