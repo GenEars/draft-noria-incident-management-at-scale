@@ -40,6 +40,19 @@ TBC
 
 --- middle
 
+# Status of this document
+
+This document is experimental.  The main goal of this document is to
+propose an iterative lifecycle process to network anomaly detection
+by proposing a data model for metadata to be addressed at different
+lifecycle stages.
+
+The experiment consists of verifying whether the approach is usable
+in real use case scenarios to support proper refinement and
+adjustments of network anomaly detection algorithms.  The experiment
+can be deemed successful if validated at least with an open-source
+implementation sucessfully applied in real production networks.
+
 # Introduction
 
 TODO Introduction
@@ -68,6 +81,30 @@ Since ..., this document defines ...
 {::boilerplate bcp14-tagged}
 
 
+This document makes use of the terms defined in
+[I-D.ietf-nmop-terminology].
+
+*  State
+
+*  Problem
+
+*  Event
+
+*  Alarm
+
+*  Symptom
+
+# Proposal
+
+Include TT descriptors
+Track and tag the remediation actions through KG
+Capture the incident context (SL, model-based)
+Share the incident context, including the lifecycle.
+
+[I.D.draft-netana-nmop-network-anomaly-lifecycle]
+Network Anomaly Detection
+Network Anomaly Validation
+Network Anomaly Refinement
 
 ## NetOps perspective
 
@@ -192,6 +229,12 @@ Since ..., this document defines ...
 ```
 
 
+# Implementation status
+
+This section provides pointers to existing open source implementations of this draft.
+
+Note to the RFC-editor: Please remove this before publishing.
+
 # Security Considerations
 
 TODO Security
@@ -310,6 +353,19 @@ TBC ...
   ACM, New York, NY, USA, 9 pages.
   2023.
   https://doi.org/10.1145/3600160.3604991
+
+[bramsteenwinckelFLAGSMethodologyAdaptive2021]
+  "FLAGS: A Methodology for Adaptive Anomaly Detection and Root Cause Analysis on Sensor Data Streams by Fusing Expert Knowledge with Machine Learning",
+    author = {{Bram Steenwinckel} and {Dieter De Paepe} and {Sander Vanden Hautte} and {Pieter Heyvaert} and {Mohamed Bentefrit} and {Pieter Moens} and {Anastasia Dimou} and {Bruno Van Den Bossche} and {Filip De Turck} and {Sofie Van Hoecke} and {Femke Ongenae}},
+    year = 2021,
+    journal = {Future Generation Computer Systems},
+    doi = {10.1016/j.future.2020.10.015}
+
+[bramsteenwinckelAdaptiveAnomalyDetection2018]
+    author = {{Bram Steenwinckel} and {Pieter Heyvaert} and {Dieter De Paepe} and {Olivier Janssens} and {Sander Vanden Hautte} and {Anastasia Dimou} and {Filip De Turck} and {Sofie Van Hoecke} and {Femke Ongenae}},
+    "Towards Adaptive Anomaly Detection and Root Cause Analysis by Automated Extraction of Knowledge from Risk Analyses",
+    booktitle = {9$^{th}$ International Semantic Sensor Networks Workshop (SSN)},
+    year = {2018}
 
 --- back
 
