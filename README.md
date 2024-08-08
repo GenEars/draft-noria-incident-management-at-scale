@@ -1,6 +1,8 @@
+**Deprecated**: the new home for this project is https://github.com/GenEars/draft-tailhardat-nmop-incident-management-noria
+
 # Knowledge Graphs for Enhanced Cross-Operator Incident Management and Network Design
 
-This is the working area for the individual Internet-Draft, "Knowledge Graphs for Enhanced Cross-Operator Incident Management and Network Design".
+This is the working area for the individual Internet-Draft, "*Knowledge Graphs for Enhanced Cross-Operator Incident Management and Network Design*".
 
 * [Editor's Copy](https://GenEars.github.io/draft-noria-incident-management-at-scale/#go.draft-tailhardat-nmop-incident-management-noria.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-tailhardat-nmop-incident-management-noria)
@@ -13,6 +15,7 @@ This is the working area for the individual Internet-Draft, "Knowledge Graphs fo
 * [IETF-Meetings/120 /Requested-Slots](https://github.com/ietf-wg-nmop/IETF-Meetings/blob/main/120/Requested-Slots.md)
 * [M. Boucadair GitHub](https://github.com/boucadair)
 * [draft-marcas-nmop-knowledge-graph-yang-latest](https://idomingu.github.io/knowledge-graph-yang/draft-marcas-nmop-knowledge-graph-yang.html)
+* [martinthomson/internet-draft-template](https://github.com/martinthomson/internet-draft-template)
 
 ## Maintainer
 

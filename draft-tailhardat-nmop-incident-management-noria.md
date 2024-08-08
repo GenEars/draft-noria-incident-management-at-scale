@@ -325,6 +325,10 @@ TBC ...
   5 July 2024,
   <https://datatracker.ietf.org/doc/draft-marcas-nmop-knowledge-graph-yang/>.
 
+=> alignement de vocabulaires ayant des concepts analogues
+=> rien en cybersec, très orienté déploiement infra, rien qui concerne les ops (activités, la descriptions des événements, écosystème [org, bâtiments, procédures]).
+=> proposition : Un KG structuré, p.ex. par NORIA-O, qui voit toutes les perspectives et qui sert de méta-graph aux sous-modèles KG Yang.
+
 [I.D.draft-netana-nmop-network-anomaly-lifecycle]
   A. Roberto, T. Graf, W. Du, and A. Huang Feng,
   "Experiment: Network Anomaly Lifecycle",
@@ -333,6 +337,9 @@ TBC ...
   draft-netana-nmop-network-anomaly-lifecycle-03,
   8 July 2024,
   <https://datatracker.ietf.org/doc/draft-netana-nmop-network-anomaly-lifecycle/>.
+
+* Detection adjusted: à l'échelle de l'incident, et non pas de l'archi ou de l'entreprise (i.e. pas de capitalisation, de généralisatio)
+
 
 [I.D.draft-netana-nmop-network-anomaly-semantics]
   T. Graf, W. Du, A. Huang Feng, V. Riccobene, and A. Roberto,
@@ -349,6 +356,9 @@ TBC ...
   In 21st European Semantic Web Conference (ESWC), Resources track, May 26-30, 2024, Hersonissos, Greece.
   2024.
   https://doi.org/10.1007/978-3-031-60635-9_2
+
+* Manque: définir de façon univoques les OperationPlan
+* Manque: apprentissage sur les verbatims des TT
 
 [StatisticalLearningKG-2023]
   Lionel TAILHARDAT, Raphaël TRONCY, and Yoan CHABOT.
